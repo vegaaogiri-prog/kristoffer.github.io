@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style/JEUX.css" />
+    <title>Petit jeux</title>
+ </head>
+<body>
+    <div class="window">
+        <div class="titlebar">JEUX</div>
+        <div class="content">
+            <div class="banner">JEUX</div>
+            <div class="box center">
+                <!-- ===== INTÉGRATION DU JEU ARKANOID ===== -->
+                <div id="arkanoid-game">
+                    <div class="game-container">
+                        <div class="canvas-wrapper">
+                            <canvas id="gameCanvas" width="480" height="640" aria-label="Zone de jeu Arkanoid"></canvas>
+                        </div>
+                        <div class="hud-panel">
+                            <div class="logo-title">A R K A N O I D</div>
+                            <div class="info-block">
+                                <div class="info-label">1 UP</div>
+                                <div class="info-value score" id="scoreDisplay">000000</div>
+                            </div>
+                            <div class="info-block">
+                                <div class="info-label">HIGH</div>
+                                <div class="info-value high" id="highScoreDisplay">050000</div>
+                            </div>
+                            <div class="info-block">
+                                <div class="info-label">WAVE</div>
+                                <div class="info-value wave" id="waveDisplay">01</div>
+                            </div>
+                            <div class="info-block">
+                                <div class="lives-label">VIES</div>
+                                <div class="lives-container">
+                                    <canvas id="livesCanvas" width="140" height="28" aria-label="Icônes de vies"></canvas>
+                                </div>
+                            </div>
+                            <div class="controls-hint">
+                                <span>← →</span> ou <span>SOURIS</span><br />
+                                <span>ESPACE</span> / <span>CLIC</span><br />
+                                pour lancer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===== FIN INTÉGRATION ===== -->
+            </div>
+
+            <a href="../index.html" class="btn">Retour à l'ACCUEIL</a>
+        </div>
+        <div class="statusbar"></div>
+    </div>
+
+    <script src="../scripts/jeux.js"></script>
+</body>
+</html>
